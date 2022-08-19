@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ocedata_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ocedata/ocedata_{{ version }}.tar.gz
-  sha256: 4c9f753d14907981cc0e691b417b069580fa2fd6f47dc3a388a41dcf33bdc3ca
+  sha256: f3c71bc6797dc3b6d858d1082385e7e9eba2fe107f8bd846690633a5d403497a
 
 build:
   merge_build_host: true  # [win]
